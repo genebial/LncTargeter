@@ -15,3 +15,6 @@ conda deactivate
 ```
 To learn more about conda and environments, please consider the following [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#)
 \# 
+### Usage
+```
+python 
