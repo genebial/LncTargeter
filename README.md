@@ -6,7 +6,7 @@ A computational platform to predict the binding sites and the directly regulated
 ```
 git clone https://github.com/summus-kong/LncTarget.git
 cd LncTarget
-conda env create -f=lnctarget_conda.yml -name lnctarget -p /path/conda/env/lnctarget
+conda env create -f=lnctarget_conda.yml -p /path/conda/env/lnctarget
 conda activate lnctarget
 ```
 To deactivate the environment use:
