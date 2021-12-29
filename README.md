@@ -22,9 +22,8 @@ python LncTarget -h
 or
 ```
 chmod u+x LncTarget
-vim ~/.bashrc
 # write LncTarget dir path to bashrc
-export PATH=$PATH:/project/houwb/pro/LncTarget/
+echo "export PATH=\$PATH:/project/houwb/pro/LncTarget/" >> ~/.bashrc
 source ~/.bashrc
 ```
 ```
