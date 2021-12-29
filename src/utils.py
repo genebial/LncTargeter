@@ -210,6 +210,6 @@ def get_version():
     Get LncRNABinding software version
     :return: version
     """
-    version = 'LncRNABinding version 0.1.0 \n '
+    version = 'LncTarget version 0.1.0 \n '
 
     return version
