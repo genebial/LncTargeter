@@ -19,3 +19,14 @@ To learn more about conda and environments, please consider the following [conda
 ```
 python LncTarget -h
 ```
+or
+```
+chmod u+x LncTarget
+vim ~/.bashrc
+# write LncTarget dir path to bashrc
+export PATH=$PATH:/project/houwb/pro/LncTarget/
+source ~/.bashrc
+```
+```
+LncTarget -h
+```
