@@ -318,7 +318,6 @@ def run_predict_bs():
             gene_bed = src.get_human('gene_pos.bed')
             chr_bed = src.get_human('chr_length')
         true_gene = pts.read_bed_file(gene_bed, gene_pos_cols)
-        chr_bed = chr_bed.resolve()
         chr_length = pts.read_bed_file(chr_bed, chr_length_cols)
         # process linker and tss
         linkers_processed = pts.process_bed(linkers, ['linker_gc', 'linker_cm'])
