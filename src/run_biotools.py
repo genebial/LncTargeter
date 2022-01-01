@@ -387,7 +387,7 @@ def merge(*args, inbed, out, tem_path, d=0, **kw):
 
     options = ut.parse_biotools_options(*args, **kw)
     tem_bed = f'{tem_path}/merge_temsite.bed'
-    cmd = ['sort -k1,1 -k2,2n', inbed, '|', 'bedtools', 'merge', '-c', '4,5', '-o', 'distinct,median', '-d', d]
+    cmd = ['sort -k1,1 -k2,2n', inbed, '|', 'bedtools', 'merge', '-c', '4,5', '-o', 'distinct,median', '-d', str(d)]
     cmd.extend(options)
     cmd.append(f' > {tem_bed}')
     try:
