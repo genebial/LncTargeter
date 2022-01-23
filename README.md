@@ -14,6 +14,11 @@ To deactivate the environment use:
 conda deactivate
 ```
 To learn more about conda and environments, please consider the following [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#)
+
+**manually install dependent packages**
+
+See the requirment.txt file
+
 \# 
 ### Usage
 ```
@@ -23,7 +28,7 @@ or
 ```
 chmod u+x LncTarget
 # write LncTarget dir path to bashrc
-echo "export PATH=\$PATH:/project/houwb/pro/LncTarget/" >> ~/.bashrc
+echo "export PATH=\$PATH:path/LncTarget/" >> ~/.bashrc
 source ~/.bashrc
 ```
 ```
