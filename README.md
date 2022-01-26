@@ -6,7 +6,7 @@ A computational platform to predict the binding sites and the directly regulated
 ```
 git clone https://github.com/summus-kong/LncTarget.git
 cd LncTarget
-conda env create -f=lnctarget_conda.yml -name lnctarget -p /path/conda/env/lnctarget
+conda env create -f=lnctarget_conda.yml -p /path/conda/env/lnctarget
 conda activate lnctarget
 ```
 To deactivate the environment use:
@@ -14,7 +14,23 @@ To deactivate the environment use:
 conda deactivate
 ```
 To learn more about conda and environments, please consider the following [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html#)
+
+**manually install dependent packages**
+
+See the requirment.txt file
+
 \# 
 ### Usage
 ```
-python 
+python LncTarget -h
+```
+or
+```
+chmod u+x LncTarget
+# write LncTarget dir path to bashrc
+echo "export PATH=\$PATH:path/LncTarget/" >> ~/.bashrc
+source ~/.bashrc
+```
+```
+LncTarget -h
+```

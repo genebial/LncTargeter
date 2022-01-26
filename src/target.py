@@ -230,7 +230,7 @@ def run_predict_bs():
     if flag_pp:
         use_cols = ['cm_fs', 'gc_fs', 'RR_fs', 'start_fs', 'length_fs', 'RD_site', 'cm_site', 'gc_site']
         input_xgb = xgb.DMatrix(total_merge[use_cols])
-        site_model = src.get_model('model/LncRNABinder.json')
+        site_model = src.get_model('LncRNABinder.json')
         xgb_prob = model.run_xgboost(input_xgb, site_model)
         total_merge['score'] = xgb_prob
         if not total_merge.empty:
@@ -318,7 +318,6 @@ def run_predict_bs():
             gene_bed = src.get_human('gene_pos.bed')
             chr_bed = src.get_human('chr_length')
         true_gene = pts.read_bed_file(gene_bed, gene_pos_cols)
-        chr_bed = chr_bed.resolve()
         chr_length = pts.read_bed_file(chr_bed, chr_length_cols)
         # process linker and tss
         linkers_processed = pts.process_bed(linkers, ['linker_gc', 'linker_cm'])
