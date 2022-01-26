@@ -1,0 +1,10 @@
+python >= 3.8
+pandas
+xgboost
+numpy
+biopython
+scikit-learn
+scipy
+bedtools
+bowtie
+viennarna
