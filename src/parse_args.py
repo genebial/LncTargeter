@@ -152,8 +152,9 @@ def parseArguments():
                           help='Minimum score for target genes.')
     optional.add_argument('--core_threshold',
                           required=False,
+                          type=float,
                           metavar='<float>',
-                          default=0.35,
+                          default=0.5,
                           help='Threshold for screening core sequence')
     optional.add_argument("-h", "--help",
                           action="help",

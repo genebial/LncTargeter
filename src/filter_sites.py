@@ -53,7 +53,7 @@ def search_peak(bases_counts, threshold, rnafold):
     return out_dict
 
 
-def identity_star_seq(total_merge, outbed, rnafold, cut_value=0.35):
+def identity_star_seq(total_merge, outbed, rnafold, cut_value):
     """
     Screen feature sequence
     :param rnafold: opened rnafold file
