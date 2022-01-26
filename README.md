@@ -28,7 +28,7 @@ or
 ```
 chmod u+x LncTargeter
 # write LncTargeter dir path to bashrc
-echo "export PATH=\$PATH:path/LncTargeter/" >> ~/.bashrc
+echo "export PATH=$PATH:path/LncTargeter/" >> ~/.bashrc
 source ~/.bashrc
 ```
 ```
