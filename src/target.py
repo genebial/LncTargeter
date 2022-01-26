@@ -373,6 +373,9 @@ def run_predict_bs():
         out_predicted_genes.to_csv(out_gene_res, sep='\t', index=False)
     if ut.check_files_exist(out_gene_res):
         flag_out = 1
+        if ut.check_paths_exist(outtem):
+            rmdir = f'rm -r {outtem}'
+            ut.run_biotools(rmdir)
 
     if not flag_out:
         logging.error('Please check output server')

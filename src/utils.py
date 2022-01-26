@@ -207,9 +207,9 @@ def rmdir(dir_path):
 
 def get_version():
     """
-    Get LncRNABinding software version
+    Get LncTargeter software version
     :return: version
     """
-    version = 'LncTarget version 0.1.0 \n '
+    version = 'LncTargeter version 0.1.0 \n '
 
     return version

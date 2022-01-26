@@ -1,13 +1,13 @@
-# LncTarget
+# LncTargeter
 A computational platform to predict the binding sites and the directly regulated genes of a given lncRNA 
 
 ### Installation
 **install with conda**
 ```
-git clone https://github.com/summus-kong/LncTarget.git
-cd LncTarget
-conda env create -f=lnctarget_conda.yml -p /path/conda/env/lnctarget
-conda activate lnctarget
+git clone https://github.com/summus-kong/LncTargeter.git
+cd LncTargeter
+conda env create -f=lnctargeter_conda.yml -p /path/conda/env/lnctargeter
+conda activate lnctargeter
 ```
 To deactivate the environment use:
 ```
@@ -22,15 +22,15 @@ See the requirment.txt file
 \# 
 ### Usage
 ```
-python LncTarget -h
+python LncTargeter -h
 ```
 or
 ```
-chmod u+x LncTarget
-# write LncTarget dir path to bashrc
-echo "export PATH=\$PATH:path/LncTarget/" >> ~/.bashrc
+chmod u+x LncTargeter
+# write LncTargeter dir path to bashrc
+echo "export PATH=\$PATH:path/LncTargeter/" >> ~/.bashrc
 source ~/.bashrc
 ```
 ```
-LncTarget -h
+LncTargeter -h
 ```

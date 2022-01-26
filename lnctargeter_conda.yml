@@ -1,4 +1,4 @@
-name: lnctarget
+name: lnctargeter
 channels:
   - bioconda
   - defaults
