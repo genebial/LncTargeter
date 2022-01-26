@@ -143,7 +143,7 @@ def parseArguments():
                           type=float,
                           metavar='<float>',
                           default=0.5,
-                          help="Minimum score for screening lncRNA target regions.")
+                          help="Minimum score for screening lncRNA DNA target regions.")
     optional.add_argument('--gene_score',
                           required=False,
                           type=float,

@@ -56,7 +56,7 @@ def search_peak(bases_counts, threshold, rnafold):
 def identity_star_seq(total_merge, outbed, rnafold, cut_value=0.35):
     """
     Screen feature sequence
-    :param rnafold: opened RNAfold file
+    :param rnafold: opened rnafold file
     :param outbed: output bed file
     :param cut_value: value for screen feature sequence
     :param total_merge: data frame
